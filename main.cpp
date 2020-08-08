@@ -13,7 +13,6 @@ using namespace sf;
 
 int main()
 {
-();
       RenderWindow window(sf::VideoMode(1200, 600), "Nordth");
       while (window.isOpen())
         {
