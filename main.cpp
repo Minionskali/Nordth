@@ -1,6 +1,11 @@
 #include <iostream>
-#include "engine/engine01a.h"
-//#include "engine/engine01b.h"
+#include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
+#include <SFML/System.hpp>
+//          TYLKO ŻE SAMI MUSICIE SE WGRAĆ SFML DO PROJEKTU 
+//          I JEST ZROBIONY ON W CODE BLOK
+
+
 
 using namespace std;
 using namespace sf;
@@ -8,14 +13,8 @@ using namespace sf;
 
 int main()
 {
-
-      ruch();
-      RenderWindow window(sf::VideoMode(1200, 600), "Game");
-      Texture enity01T;
-      enity01T.loadFromFile("grafika/enity01.png");
-      Sprite enity01;
-      enity01.setTexture(enity01T);
-      enity01.setPosition(y_P,x_P);
+();
+      RenderWindow window(sf::VideoMode(1200, 600), "Nordth");
       while (window.isOpen())
         {
         sf::Event event;
@@ -27,7 +26,6 @@ int main()
 
 
         window.clear();
-        window.draw(enity01);
         window.display();
         }
 }
