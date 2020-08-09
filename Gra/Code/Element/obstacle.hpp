@@ -1,6 +1,7 @@
 #ifndef OBSTACLE_HPP
 #define OBSTACLE_HPP
-class Obstacle
+#include "gobject.hpp"
+class Obstacle: public GObject
 {
 public:
 	Obstacle();

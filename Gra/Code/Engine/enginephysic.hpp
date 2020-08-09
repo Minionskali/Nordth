@@ -1,6 +1,7 @@
 #ifndef ENGINEPHYSIC_HPP
 #define ENGINEPHYSIC_HPP
-class EnginePhysic
+#include "enginebase.hpp"
+class EnginePhysic: public EngineBase
 {
 public:
 	EnginePhysic();
