@@ -1,3 +1,4 @@
+#pragma once
 #ifndef BUFFER_HPP
 #define BUFFER_HPP
 #include "frame.hpp"

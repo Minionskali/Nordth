@@ -1,3 +1,4 @@
+#pragma once
 #ifndef EVENTDEATH_HPP
 #define EVENTDEATH_HPP
 #include "eventbase.hpp"

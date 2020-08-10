@@ -1,9 +1,10 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include "Graphic/image.hpp"
+#include "Code/Game/game.hpp"
+int main() {
 
-int main() 
-{
+	Game game; 
+
 	sf::RenderWindow window(sf::VideoMode(800, 600), "Title");
 	
 	sf::Event event;

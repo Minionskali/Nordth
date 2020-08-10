@@ -1,3 +1,4 @@
+#pragma once
 #ifndef FILEGAME_HPP
 #define FILEGAME_HPP
 class FileGame

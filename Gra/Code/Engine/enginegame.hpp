@@ -1,3 +1,4 @@
+#pragma once
 #ifndef ENGINEGAME_HPP
 #define ENGINEGAME_HPP
 #include "enginebase.hpp"
