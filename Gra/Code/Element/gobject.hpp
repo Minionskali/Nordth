@@ -1,8 +1,8 @@
 #ifndef GOBJECT_HPP
 #define GOBJECT_HPP
-#include "..\Graphic\image.hpp"
-#include "..\Event\eventobserver.hpp"
-#include "..\Board\board.hpp"
+#include "../Graphic/image.hpp"
+#include "../Event/eventobserver.hpp"
+#include "../Board/board.hpp"
 class GObject
 {
 protected:

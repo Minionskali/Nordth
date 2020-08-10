@@ -6,3 +6,8 @@ EngineGraphic::EngineGraphic()
 EngineGraphic::~EngineGraphic()
 {
 }//Destruktor EngineGraphic
+
+void EngineGraphic::PLACEHOLDER()
+{
+    
+}
