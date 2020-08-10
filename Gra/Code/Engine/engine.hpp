@@ -5,8 +5,11 @@
 #include "enginephysic.hpp"
 class Engine
 {
+	bool Play;
 public:
 	Engine();
 	~Engine();
+	bool& isPlay();
+	void run();
 }; //End class Engine
 #endif //!ENGINE_HPP

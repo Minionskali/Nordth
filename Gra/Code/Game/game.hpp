@@ -11,6 +11,7 @@ class Game
 	Manager manager;
 public:
 	Game();
+	void run();
 	~Game();
 }; //End class Game
 #endif //!GAME_HPP
