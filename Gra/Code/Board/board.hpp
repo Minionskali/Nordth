@@ -3,6 +3,7 @@
 #include "../Element/actor.hpp"
 #include "../Element/iteam.hpp"
 #include "../Element/obstacle.hpp"
+
 class Board
 {
 	Actor* actor;

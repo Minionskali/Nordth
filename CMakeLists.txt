@@ -6,15 +6,23 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_BUILD_TYPE Debug)
 
 include_directories(
-    ${CMAKE_CURRENT_SOURCE_DIR}/Gra/Code/*
+    ${CMAKE_CURRENT_SOURCE_DIR}/Gra/Code/
 )
-    
-AUX_SOURCE_DIRECTORY(${CMAKE_CURRENT_SOURCE_DIR}/Gra/Code/* SourceFiles)
+
+file(
+    GLOB SourceFiles
+    ${CMAKE_CURRENT_SOURCE_DIR}/Gra/Code/Board/*.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/Gra/Code/Element/*.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/Gra/Code/Graphic/*.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/Gra/Code/Engine/*.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/Gra/Code/Event/*.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/Gra/Code/Game/*.cpp
+    )
 
 set(
     SRC
-    ${CMAKE_CURRENT_SOURCE_DIR}/Gra/main.cpp
     ${SourceFiles}
+    ${CMAKE_CURRENT_SOURCE_DIR}/Gra/main.cpp
 )
 
 link_libraries(

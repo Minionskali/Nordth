@@ -1,7 +1,9 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
-int main() {
+#include "Graphic/image.hpp"
 
+int main() 
+{
 	sf::RenderWindow window(sf::VideoMode(800, 600), "Title");
 	
 	sf::Event event;
@@ -14,6 +16,8 @@ int main() {
 				window.close();
 			}
 		}
+		window.clear();
+		window.display();
 	}
 
 	return 0;

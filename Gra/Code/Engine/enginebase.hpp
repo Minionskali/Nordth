@@ -9,6 +9,6 @@ public:
 	EngineBase();
 	void AddBoard(Board* board_Exist);
 	virtual void PLACEHOLDER();
-	~EngineBase();
+	virtual ~EngineBase();
 }; //End class EngineBase
 #endif //!ENGINEBASE_HPP
