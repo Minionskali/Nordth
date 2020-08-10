@@ -7,4 +7,3 @@ EventBase::EventBase(EventData* event)
 EventBase::~EventBase()
 {
 }//Destruktor EventBase
-EventBase::EventBase() {}

@@ -5,6 +5,11 @@ Image::Image(const std::string&& path)
     load(path);
 }
 
+Image::Image(const std::string& path)
+{
+    load(path);
+}
+
 Image::~Image()
 {
 

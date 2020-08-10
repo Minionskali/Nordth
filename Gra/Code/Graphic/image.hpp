@@ -11,6 +11,7 @@ class Image : public sf::Drawable
 	public:
 	Image() = default;
 	Image(const std::string&& path);
+	Image(const std::string& path);
 	~Image();
 
 	void load(const std::string& path);
