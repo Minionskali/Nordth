@@ -1,3 +1,4 @@
+#pragma once
 #ifndef EVENTBASE_HPP
 #define EVENTBASE_HPP
 #include "eventdata.hpp"
@@ -5,6 +6,7 @@ class EventBase
 {
 
 public:
+	EventBase();
 	EventBase(EventData* event);
 	~EventBase();
 	enum Event

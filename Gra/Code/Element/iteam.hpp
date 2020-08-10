@@ -1,3 +1,4 @@
+#pragma once
 #ifndef ITEAM_HPP
 #define ITEAM_HPP
 #include "gobject.hpp"

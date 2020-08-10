@@ -1,3 +1,4 @@
+#pragma once
 #ifndef EVENTOBSERVER_HPP
 #define EVENTOBSERVER_HPP
 #include "eventdeath.hpp"

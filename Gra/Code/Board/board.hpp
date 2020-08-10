@@ -1,3 +1,4 @@
+#pragma once
 #ifndef BOARD_HPP
 #define BOARD_HPP
 #include "..\Element\actor.hpp"
@@ -5,9 +6,9 @@
 #include "..\Element\obstacle.hpp"
 class Board
 {
-	Actor* actor;
-	Iteam* iteam;
-	Obstacle* obstacle;
+	Actor* actor = nullptr;
+	Iteam* iteam = nullptr;
+	Obstacle* obstacle = nullptr;
 	int SizeActor;
 	int SizeIteam;
 	int SizeObstacle;

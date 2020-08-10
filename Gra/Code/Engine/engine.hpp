@@ -1,3 +1,4 @@
+#pragma once
 #ifndef ENGINE_HPP
 #define ENGINE_HPP
 #include "enginegame.hpp"

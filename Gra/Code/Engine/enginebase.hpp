@@ -1,3 +1,4 @@
+#pragma once
 #ifndef ENGINEBASE_HPP
 #define ENGINEBASE_HPP
 #include "..\Board\board.hpp"

@@ -1,3 +1,4 @@
+#pragma once
 #ifndef OBSTACLE_HPP
 #define OBSTACLE_HPP
 #include "gobject.hpp"
