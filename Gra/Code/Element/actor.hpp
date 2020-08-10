@@ -1,6 +1,7 @@
 #ifndef ACTOR_HPP
 #define ACTOR_HPP
-class Actor
+#include "gobject.hpp"
+class Actor: public GObject
 {
 public:
 	Actor();

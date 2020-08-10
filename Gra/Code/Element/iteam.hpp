@@ -1,6 +1,7 @@
 #ifndef ITEAM_HPP
 #define ITEAM_HPP
-class Iteam
+#include "gobject.hpp"
+class Iteam : public GObject
 {
 public:
 	Iteam();

@@ -1,7 +1,11 @@
 #ifndef ENGINEGRAPHIC_HPP
 #define ENGINEGRAPHIC_HPP
-class EngineGraphic
+#include "enginebase.hpp"
+#include "..\Graphic\frame.hpp"
+#include <list>
+class EngineGraphic: public EngineBase
 {
+	std::list<Frame>* Frames;
 public:
 	EngineGraphic();
 	~EngineGraphic();

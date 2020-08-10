@@ -1,6 +1,7 @@
 #ifndef ENGINEGAME_HPP
 #define ENGINEGAME_HPP
-class EngineGame
+#include "enginebase.hpp"
+class EngineGame: public EngineBase
 {
 public:
 	EngineGame();
