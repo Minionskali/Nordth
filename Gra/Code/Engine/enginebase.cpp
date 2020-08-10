@@ -9,3 +9,8 @@ EngineBase::~EngineBase()
 void EngineBase::AddBoard(Board* board_Exist) {
 	board = board_Exist;
 }
+
+void EngineBase::PLACEHOLDER()
+{
+	
+}

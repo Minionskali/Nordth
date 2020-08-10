@@ -1,7 +1,7 @@
 #pragma once
 #ifndef ENGINEBASE_HPP
 #define ENGINEBASE_HPP
-#include "..\Board\board.hpp"
+#include "../Board/board.hpp"
 class EngineBase
 {
 protected:
@@ -9,6 +9,7 @@ protected:
 public:
 	EngineBase();
 	void AddBoard(Board* board_Exist);
-	~EngineBase();
+	virtual void PLACEHOLDER();
+	virtual ~EngineBase();
 }; //End class EngineBase
 #endif //!ENGINEBASE_HPP

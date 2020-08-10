@@ -6,7 +6,7 @@ class EventBase
 {
 
 public:
-	EventBase();
+	EventBase() = default;
 	EventBase(EventData* event);
 	~EventBase();
 	enum Event

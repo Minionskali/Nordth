@@ -1,9 +1,10 @@
 #pragma once
 #ifndef BOARD_HPP
 #define BOARD_HPP
-#include "..\Element\actor.hpp"
-#include "..\Element\iteam.hpp"
-#include "..\Element\obstacle.hpp"
+#include "../Element/actor.hpp"
+#include "../Element/iteam.hpp"
+#include "../Element/obstacle.hpp"
+
 class Board
 {
 	Actor* actor = nullptr;

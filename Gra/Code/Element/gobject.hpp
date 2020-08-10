@@ -1,8 +1,8 @@
 #pragma once
 #ifndef GOBJECT_HPP
 #define GOBJECT_HPP
-#include "..\Graphic\image.hpp"
-#include "..\Event\eventobserver.hpp"
+#include "../Graphic/image.hpp"
+#include "../Event/eventobserver.hpp"
 class GObject
 {
 protected:

@@ -7,9 +7,11 @@ Engine::Engine()
 Engine::~Engine()
 {
 }//Destruktor Engine
-bool& Engine::isPlay() {
+bool& Engine::isPlay() 
+{
 	return Play;
 }
-void Engine::run() {
-
+void Engine::run() 
+{
+	
 }

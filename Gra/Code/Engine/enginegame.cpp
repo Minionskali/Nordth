@@ -6,3 +6,8 @@ EngineGame::EngineGame()
 EngineGame::~EngineGame()
 {
 }//Destruktor EngineGame
+
+void EngineGame::PLACEHOLDER()
+{
+    
+}

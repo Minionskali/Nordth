@@ -6,3 +6,8 @@ EnginePhysic::EnginePhysic()
 EnginePhysic::~EnginePhysic()
 {
 }//Destruktor EnginePhysic
+
+void EnginePhysic::PLACEHOLDER()
+{
+    
+}
