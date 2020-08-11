@@ -1,6 +1,6 @@
 #include "actor.hpp"
 
-Actor::Actor()
+Actor::Actor():GObject(true)
 {
 }//Constructor Actor
 Actor::~Actor()
