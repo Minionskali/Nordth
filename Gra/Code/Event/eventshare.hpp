@@ -5,7 +5,7 @@
 class EventShare:public EventBase
 {
 public:
-	EventShare();
+	EventShare(int event, int id, int eventSender);
 	~EventShare();
 }; //End class EventShare
 #endif //!EVENTSHARE_HPP

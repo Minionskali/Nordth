@@ -1,14 +1,11 @@
 #pragma once
 #ifndef EVENTOBSERVER_HPP
 #define EVENTOBSERVER_HPP
-#include "eventdeath.hpp"
-#include "eventmotion.hpp"
-#include "eventphysic.hpp"
-#include "eventshare.hpp"
-#include "eventdata.hpp"
+#include "factoryevent.hpp"
 #include <list>
 class EventObserver
 {
+	FactoryEvent factory;
 	std::list<EventBase*> Events;
 public:
 	EventObserver();

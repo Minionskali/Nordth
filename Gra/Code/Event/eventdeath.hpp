@@ -5,7 +5,7 @@
 class EventDeath: public EventBase
 {
 public:
-	EventDeath();
+	EventDeath(int event, int id, int eventSender);
 	~EventDeath();
 }; //End class EventDeath
 #endif //!EVENTDEATH_HPP

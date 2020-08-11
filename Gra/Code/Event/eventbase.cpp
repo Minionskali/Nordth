@@ -1,10 +1,10 @@
 #include "eventbase.hpp"
 
-EventBase::EventBase(EventData* event)
+EventBase::EventBase(int event, int id, int eventSender)
 {
-	_IDSender = event->GetValue(event->idSender);
-	_ElementSender = Element(event->GetValue(event->elementSender));
-	_event = Event(event->GetValue(event->event));
+	_IDSender = id;
+	_ElementSender = Element(eventSender);
+	_event = Event(event);
 }//Constructor EventBase
 EventBase::~EventBase()
 {

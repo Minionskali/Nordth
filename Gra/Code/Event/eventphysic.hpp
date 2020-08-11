@@ -5,7 +5,7 @@
 class EventPhysic:public EventBase
 {
 public:
-	EventPhysic();
+	EventPhysic(int event, int id, int eventSender);
 	~EventPhysic();
 }; //End class EventPhysic
 #endif //!EVENTPHYSIC_HPP
