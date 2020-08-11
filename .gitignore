@@ -1,6 +1,9 @@
 #IDE
 .vscode
 
+#SFML if someone uses library includes inside project
+SFML
+
 #cMake build folder
 build
 
