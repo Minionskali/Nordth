@@ -4,7 +4,7 @@
 int main() {
 
 	Game game; 
-
+	game.run();
 	sf::RenderWindow window(sf::VideoMode(800, 600), "Title");
 	
 	sf::Event event;

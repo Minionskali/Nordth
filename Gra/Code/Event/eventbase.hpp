@@ -28,9 +28,7 @@ public:
 private:
 	Event _event;
 	int _IDSender;
-	int _IDRecipient;
 	Element _ElementSender;
-	Element _ElementRecipient;
 
 }; //End class EventBase
 #endif //!EVENTBASE_HPP
