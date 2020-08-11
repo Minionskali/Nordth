@@ -29,6 +29,7 @@ link_libraries(
     sfml-graphics
     sfml-window
     sfml-system
+    pthread
 )
 
 add_executable(${PROJECT_NAME}.out ${SRC})

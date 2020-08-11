@@ -1,13 +1,12 @@
-#pragma once
+
 #ifndef EVENTBASE_HPP
 #define EVENTBASE_HPP
 #include "eventdata.hpp"
 class EventBase
 {
-
 public:
 	EventBase() = default;
-	EventBase(EventData* event);
+	EventBase(int event, int id, int eventSender);
 	~EventBase();
 	enum Event
 	{
@@ -21,5 +20,15 @@ public:
 		RunRight,
 		Death,
 	};
+	enum Element {
+		Item,
+		Obstacle,
+		Actor
+	};
+private:
+	Event _event;
+	int _IDSender;
+	Element _ElementSender;
+
 }; //End class EventBase
 #endif //!EVENTBASE_HPP
