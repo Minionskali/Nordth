@@ -1,4 +1,4 @@
-#pragma once
+
 #ifndef GOBJECT_HPP
 #define GOBJECT_HPP
 #include "../Graphic/image.hpp"

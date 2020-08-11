@@ -1,4 +1,4 @@
-#pragma once
+
 #ifndef MANAGER_HPP
 #define MANAGER_HPP
 class Manager

@@ -1,4 +1,4 @@
-#pragma once
+
 #ifndef EVENTSHARE_HPP
 #define EVENTSHARE_HPP
 #include "eventbase.hpp"

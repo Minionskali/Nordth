@@ -1,4 +1,4 @@
-#pragma once
+
 #ifndef FABRICITEAM_HPP
 #define FABRICITEAM_HPP
 class FabricIteam

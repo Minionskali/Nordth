@@ -1,4 +1,4 @@
-#pragma once
+
 #ifndef EVENTMOTION_HPP
 #define EVENTMOTION_HPP
 #include "eventbase.hpp"

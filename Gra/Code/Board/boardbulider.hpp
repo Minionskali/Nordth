@@ -1,4 +1,4 @@
-#pragma once
+
 #ifndef BOARDBULIDER_HPP
 #define BOARDBULIDER_HPP
 #include "board.hpp"
