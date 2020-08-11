@@ -1,4 +1,4 @@
-#pragma once
+
 #ifndef BOARD_HPP
 #define BOARD_HPP
 #include "../Element/actor.hpp"

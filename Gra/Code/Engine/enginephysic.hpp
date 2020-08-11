@@ -1,4 +1,4 @@
-#pragma once
+
 #ifndef ENGINEPHYSIC_HPP
 #define ENGINEPHYSIC_HPP
 #include "enginebase.hpp"

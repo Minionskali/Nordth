@@ -1,4 +1,4 @@
-#pragma once
+
 #ifndef FABRICOBSTACLE_HPP
 #define FABRICOBSTACLE_HPP
 class FabricObstacle
