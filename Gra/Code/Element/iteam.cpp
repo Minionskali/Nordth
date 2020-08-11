@@ -1,6 +1,6 @@
 #include "iteam.hpp"
 
-Iteam::Iteam()
+Iteam::Iteam():GObject(false)
 {
 }//Constructor Iteam
 Iteam::~Iteam()

@@ -1,6 +1,6 @@
 #include "obstacle.hpp"
 
-Obstacle::Obstacle()
+Obstacle::Obstacle():GObject(false)
 {
 }//Constructor Obstacle
 Obstacle::~Obstacle()

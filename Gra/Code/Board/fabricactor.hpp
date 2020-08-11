@@ -1,4 +1,4 @@
-#pragma once
+
 #ifndef FABRICACTOR_HPP
 #define FABRICACTOR_HPP
 class FabricActor
