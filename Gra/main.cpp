@@ -1,6 +1,7 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "Code/Game/game.hpp"
+#include <array>
 int main() {
 
 	Game game; 
