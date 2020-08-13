@@ -26,6 +26,13 @@ void Engine::run()  // add event handling
 	tCalculations.join();
 
 }
+void Engine::CreativeBoard() {
+	BoardBulider bulider;
+	std::shared_ptr<Board> board = bulider.build();
+	_physic.AddBoard(board);
+	_graphic.AddBoard(board);
+	_game.AddBoard(board);
+}
 void render(EngineGraphic&& graphic) {
 	graphic.PLACEHOLDER();
 }
