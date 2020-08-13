@@ -19,7 +19,14 @@ class Image : public sf::Drawable
 	void draw(sf::RenderTarget& window, sf::RenderStates states) const;
 
 	const sf::Texture& getTexture() const;
+	sf::Sprite& getSprite();
 
+	Image& operator=(Image& rref)
+	{
+		_texture = rref._texture;
+		_sprite = rref._sprite;
+		return *this;
+	}
 
 	private:
 	sf::Texture _texture;

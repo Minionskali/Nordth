@@ -1,11 +1,16 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "Code/Game/game.hpp"
-#include <array>
+#include <vector>
+#include <filesystem>
+
+#include "Animations/animable.hpp"
+
 int main() {
 
-	Game game; 
-	game.run();
+	Animable::loadAnimations();
+
+	Animable animable;
 	sf::RenderWindow window(sf::VideoMode(800, 600), "Title");
 	
 	sf::Event event;
@@ -19,8 +24,8 @@ int main() {
 			}
 		}
 		window.clear();
+		animable.animate();
+		window.draw(animable);
 		window.display();
 	}
-
-	return 0;
 }

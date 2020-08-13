@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.17)
 
 project(Nordth)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_BUILD_TYPE Debug)
 
 include_directories(
@@ -11,6 +11,8 @@ include_directories(
 
 file(
     GLOB SourceFiles
+    ${CMAKE_CURRENT_SOURCE_DIR}/Gra/Code/GeneralFunctions/*.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/Gra/Code/Animations/*.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/Gra/Code/Board/*.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/Gra/Code/Element/*.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/Gra/Code/Graphic/*.cpp
