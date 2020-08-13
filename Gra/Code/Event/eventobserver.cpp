@@ -6,7 +6,7 @@ EventObserver::EventObserver()
 EventObserver::~EventObserver()
 {
 }//Destruktor EventObserver
-void EventObserver::AddEvent(EventData* event) {
+void EventObserver::AddEvent(std::shared_ptr<EventData>&& event) {
 	Events.push_back(factory.methodFactory(event));
 	//delete event;
 }

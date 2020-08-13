@@ -6,11 +6,12 @@
 #include "eventmotion.hpp"
 #include "eventphysic.hpp"
 #include "eventshare.hpp"
+#include <memory>
 class FactoryEvent
 {
 public:
 	FactoryEvent();
-	EventBase* methodFactory(EventData* data);
+	std::shared_ptr<EventBase> methodFactory(std::shared_ptr<EventData>& data);
 	~FactoryEvent();
 }; //End class FactoryEvent
 #endif //!FACTORYEVENT_HPP

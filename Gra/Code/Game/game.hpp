@@ -5,13 +5,14 @@
 #include "../Engine/engine.hpp"
 #include "../Graphic/graphic.hpp"
 #include "filegame.hpp"
+#include <memory>
 #include <string>
 class Game
 {
 	Engine engine;
 	Graphic graphic;
 	Manager manager;
-	sf::RenderWindow* window = nullptr;
+	std::shared_ptr<sf::RenderWindow> window;
 public:
 	Game();
 	void run();

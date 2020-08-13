@@ -13,14 +13,9 @@ void Game::run() {
 		engine.run();
 }
 void Game::createWindows(unsigned int&& height, unsigned int&& width, std::string&& title) {
-	window = new sf::RenderWindow(sf::VideoMode(width, height), title);
+	window = std::make_shared<sf::RenderWindow>(sf::VideoMode(width, height), title);
 }
 void Game::closeWindows() {
-	if (window) {
-		window->clear();
-		window->display();
-		delete window;
-		window = nullptr;
-	}
-
+	window->clear();
+	window->display();
 }

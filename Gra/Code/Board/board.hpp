@@ -7,9 +7,9 @@
 
 class Board
 {
-	Actor* actor = nullptr;
-	Iteam* iteam = nullptr;
-	Obstacle* obstacle = nullptr;
+	std::shared_ptr<Actor> actor;
+	std::shared_ptr<Iteam> iteam;
+	std::shared_ptr<Obstacle> obstacle;
 	int SizeActor;
 	int SizeIteam;
 	int SizeObstacle;

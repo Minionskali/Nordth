@@ -2,13 +2,14 @@
 #ifndef ENGINEBASE_HPP
 #define ENGINEBASE_HPP
 #include "../Board/board.hpp"
+#include <memory>
 class EngineBase
 {
 protected:
-	Board* board;
+	std::shared_ptr<Board> board;
 public:
 	EngineBase();
-	void AddBoard(Board* board_Exist);
+	void AddBoard(std::shared_ptr<Board>&& board_Exist);
 	virtual void PLACEHOLDER();
 	virtual ~EngineBase();
 }; //End class EngineBase

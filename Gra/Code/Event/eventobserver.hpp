@@ -6,10 +6,10 @@
 class EventObserver
 {
 	FactoryEvent factory;
-	std::list<EventBase*> Events;
+	std::list<std::shared_ptr<EventBase>> Events;
 public:
 	EventObserver();
-	void AddEvent(EventData* event);
+	void AddEvent(std::shared_ptr<EventData>&& event);
 	~EventObserver();
 }; //End class EventObserver
 #endif //!EVENTOBSERVER_HPP

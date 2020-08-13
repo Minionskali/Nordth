@@ -6,16 +6,16 @@ FactoryEvent::FactoryEvent()
 FactoryEvent::~FactoryEvent()
 {
 }//Destruktor FactoryEvent
-EventBase* FactoryEvent::methodFactory(EventData* data) {
+std::shared_ptr<EventBase> FactoryEvent::methodFactory(std::shared_ptr<EventData>& data) {
 	switch (data->GetValue(data->typeEvent)) {
 	case EventData::TypeEvent::eventDeath:
-		return new EventDeath(data->GetValue(data->event), data->GetValue(data->idSender), data->GetValue(data->elementSender));
+		return std::make_shared<EventDeath>(EventDeath(data->GetValue(data->event), data->GetValue(data->idSender), data->GetValue(data->elementSender)));
 	case EventData::TypeEvent::eventMotion:
-		return new EventMotion(data->GetValue(data->event), data->GetValue(data->idSender), data->GetValue(data->elementSender));
+		return std::make_shared<EventMotion>(EventMotion(data->GetValue(data->event), data->GetValue(data->idSender), data->GetValue(data->elementSender)));
 	case EventData::TypeEvent::eventPhysic:
-		return new EventPhysic(data->GetValue(data->event), data->GetValue(data->idSender), data->GetValue(data->elementSender));
+		return std::make_shared<EventPhysic>(EventPhysic(data->GetValue(data->event), data->GetValue(data->idSender), data->GetValue(data->elementSender)));
 	case EventData::TypeEvent::eventShare:
-		return new EventShare(data->GetValue(data->event), data->GetValue(data->idSender), data->GetValue(data->elementSender));
+		return std::make_shared<EventShare>(EventShare(data->GetValue(data->event), data->GetValue(data->idSender), data->GetValue(data->elementSender)));
 	}
-	return nullptr;
+	return std::make_shared<EventBase>();
 }
