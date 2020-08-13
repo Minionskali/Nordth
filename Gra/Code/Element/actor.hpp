@@ -5,7 +5,7 @@
 class Actor: public GObject
 {
 public:
-	Actor();
+	Actor(int value_horizontal, int value_vertical, double value_healt);
 	~Actor();
 }; //End class Actor
 #endif //!ACTOR_HPP

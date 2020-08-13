@@ -11,9 +11,11 @@ protected:
 	unsigned int _ID;
 	int _X;
 	int _Y;
+	double _healt;
 	bool _activeMovement;
+	bool _death;
 public:
-	GObject(bool active); //for expansion
+	GObject(bool active,bool death, int value_horizontal, int value_vertical, double value_healt); //for expansion
 	void inline horizontal(int value);
 	void inline vertical(int value);
 	~GObject();

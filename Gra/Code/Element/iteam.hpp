@@ -5,7 +5,7 @@
 class Iteam : public GObject
 {
 public:
-	Iteam();
+	Iteam(int value_horizontal, int value_vertical, double value_healt);
 	~Iteam();
 }; //End class Iteam
 #endif //!ITEAM_HPP

@@ -5,7 +5,8 @@
 class Obstacle: public GObject
 {
 public:
-	Obstacle();
+	Obstacle(int value_horizontal, int value_vertical, double value_healt);
+	void setActiveDeath(bool value);
 	~Obstacle();
 }; //End class Obstacle
 #endif //!OBSTACLE_HPP
