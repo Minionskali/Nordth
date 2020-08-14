@@ -19,5 +19,17 @@ public:
 	void inline horizontal(int value);
 	void inline vertical(int value);
 	~GObject();
+	enum Actor {
+		Player,
+		Corpse
+	};
+	enum Obstacle {
+		Air,
+		Scale
+	};
+	enum Iteam {
+		Dirty,
+		Gold
+	};
 }; //End class GObject
 #endif //!GOBJECT_HPP
